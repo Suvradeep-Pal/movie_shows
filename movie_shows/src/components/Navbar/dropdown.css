@@ -1,0 +1,28 @@
+.dropdown {
+  position: absolute;
+  top: 4.2rem;
+  right: 1rem;
+  width: 180px;
+  padding: 0px;
+  border-radius: 8px;
+  background-color: #697565;
+  border: 1px solid gray;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  right: 1.1rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #697565;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+.hide {
+  list-style-type: none;
+  margin-left: -10px;
+}
