@@ -74,7 +74,7 @@ const Navbar = () => {
             />
           </Tabs>
           <AccountCircleIcon
-            sx={{ marginLeft: "auto", fontSize: "40px" }}
+            sx={{ marginLeft: "auto", fontSize: "40px", cursor: "pointer" }}
             onClick={() => setOpenProfile((prev) => !prev)}
           />
         </Toolbar>

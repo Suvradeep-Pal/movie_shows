@@ -1,6 +1,12 @@
 .parent {
   margin-top: 100px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.watchnow {
+  font-size: 40px;
 }
 
 .posters {
@@ -8,10 +14,23 @@
   justify-content: flex-end;
   margin-top: 20px;
   margin-right: 15px;
+  margin-left: 720px;
 }
 
 .thumbnails {
-  width: 350px;
-  height: 220px;
+  width: 390px;
+  height: 260px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 30px;
+  height: max-content;
+  margin-top: -50px;
+}
+
+.right {
+  width: 3%;
+  margin-top: 100px;
 }

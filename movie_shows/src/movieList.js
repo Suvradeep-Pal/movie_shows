@@ -17,6 +17,7 @@ export const movieList = {
       showTimes: [
         { time: "2024-09-26T09:00:00Z" },
         { time: "2024-09-26T10:00:00Z" },
+        { time: "2024-09-26T11:00:00Z" },
       ],
       thumbnail:
         "https://ntvb.tmsimg.com/assets/p7825626_v_h10_aa.jpg?w=960&h=540",
