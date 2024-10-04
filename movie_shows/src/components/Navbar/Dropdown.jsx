@@ -4,8 +4,8 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       <ul className="hide">
-        <li>Welcome User !</li>
-        <li>Enjoy Your Movies</li>
+        <li style={{ color: "hwb(0 89% 7%)" }}>Welcome User !</li>
+        <li style={{ color: "hwb(0 89% 7%)" }}>Enjoy Your Movies</li>
       </ul>
     </div>
   );

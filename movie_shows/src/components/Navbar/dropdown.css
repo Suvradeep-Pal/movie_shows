@@ -5,8 +5,8 @@
   width: 180px;
   padding: 0px;
   border-radius: 8px;
-  background-color: #697565;
-  border: 1px solid gray;
+  background-color: rgb(37, 36, 36);
+  border: 1px solid grey;
 }
 
 .dropdown::before {
@@ -17,7 +17,7 @@
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
-  background-color: #697565;
+  background-color: rgb(37, 36, 36);
   border-left: 1px solid grey;
   border-top: 1px solid grey;
 }

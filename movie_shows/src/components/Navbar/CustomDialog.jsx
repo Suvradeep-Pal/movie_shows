@@ -17,10 +17,12 @@ const CustomDialog = (props) => {
   return (
     <div>
       <Dialog open={isOpen} maxWidth="lg" onClose={handleClose}>
-        <DialogTitle>
+        <DialogTitle sx={{ backgroundColor: "rgb(102, 102, 102)" }}>
           <div></div>
         </DialogTitle>
-        <DialogContent>{children}</DialogContent>
+        <DialogContent sx={{ backgroundColor: "rgb(102, 102, 102)" }}>
+          {children}
+        </DialogContent>
       </Dialog>
     </div>
   );

@@ -1,4 +1,18 @@
 .drop {
   margin-left: 590px;
-  margin-top: -100px;
+  margin-top: -60px;
+}
+
+.custom-select .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: hwb(0 89% 7%);
+}
+
+.custom-select .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: hwb(0 89% 7%);
+}
+
+.custom-select
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: hwb(0 89% 7%);
 }

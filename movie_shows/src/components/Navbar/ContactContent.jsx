@@ -12,34 +12,42 @@ const ContactContent = () => {
   return (
     <div>
       <div className="faicon">
-        <FontAwesomeIcon icon={faFacebook} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faYoutube} />
+        <FontAwesomeIcon icon={faFacebook} className="icon1" />
+        <FontAwesomeIcon icon={faInstagram} className="icon2" />
+        <FontAwesomeIcon icon={faTwitter} className="icon3" />
+        <FontAwesomeIcon icon={faYoutube} className="icon4" />
       </div>
 
       <div className="footerlist">
-        <div>FAQ</div>
-        <div>Confidentials</div>
-        <div>Corprate Information</div>
-        <div>Help Center</div>
+        <ul style={{ listStyle: "none" }} className="ul1">
+          <li>FAQ</li>
+          <li>Confidentials</li>
+          <li>Corprate Information</li>
+          <li>Help Center</li>
+        </ul>
       </div>
 
       <div className="secondfooterlist">
-        <div>Account</div>
-        <div>Terms of Use</div>
-        <div>Privacy</div>
+        <ul style={{ listStyle: "none" }} className="ul2">
+          <li>Account</li>
+          <li>Terms of Use</li>
+          <li>Privacy</li>
+        </ul>
       </div>
 
       <div className="thirdfooterlist">
-        <div>Report</div>
-        <div>Media Center</div>
-        <div>Legal Notices</div>
+        <ul style={{ listStyle: "none" }} className="ul3">
+          <li>Report</li>
+          <li>Media Center</li>
+          <li>Legal Notices</li>
+        </ul>
       </div>
 
       <div className="fourthfooterlist">
-        <div>Gift Cards</div>
-        <div>Cookie Preferences</div>
+        <ul ul style={{ listStyle: "none" }} className="ul4">
+          <li>Gift Cards</li>
+          <li>Cookie Preferences</li>
+        </ul>
       </div>
 
       <div className="footercopyright">

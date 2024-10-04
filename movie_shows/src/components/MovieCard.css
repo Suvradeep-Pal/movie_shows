@@ -1,0 +1,11 @@
+.card {
+  width: 393px;
+  height: 320px;
+  text-align: center;
+  margin-left: 320px;
+  margin-top: 40px;
+}
+
+.text {
+  color: hwb(0 89% 7%);
+}

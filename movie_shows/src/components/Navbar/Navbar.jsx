@@ -10,29 +10,6 @@ import AboutContent from "./AboutContent.jsx";
 import ContactContent from "./ContactContent.jsx";
 // import { useNavigate } from "react-router-dom";
 
-const Menu = [
-  {
-    id: 1,
-    name: "Home",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "Sign In",
-    link: "/#",
-  },
-  {
-    id: 3,
-    name: "About",
-    link: "/#",
-  },
-  {
-    id: 4,
-    name: "Contact Us",
-    link: "/#",
-  },
-];
-
 const Navbar = () => {
   const [value, setValue] = useState();
   const [openProfile, setOpenProfile] = useState(false);
@@ -56,7 +33,7 @@ const Navbar = () => {
             value={value}
             onChange={(e, value) => setValue(value)}
           >
-            <Tab sx={{ fontSize: "23px", marginLeft: "60px" }} label="Home" />
+            <Tab sx={{ fontSize: "23px", marginLeft: "130px" }} label="Home" />
             <Tab
               sx={{ fontSize: "23px", marginLeft: "60px" }}
               label="Sign In"

@@ -12,7 +12,6 @@ export const MovieThumbnail = (props) => {
         className="thumbnails"
         onClick={handleClick}
       />
-      {/* <h4>{e.trailers[0].url}</h4> */}
     </div>
   );
   function handleClick() {

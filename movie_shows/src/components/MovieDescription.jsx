@@ -3,7 +3,10 @@ import "./MovieDescription.css";
 
 export const MovieDescription = () => {
   return (
-    <div className="description">
+    <div
+      className="description"
+      style={{ backgroundColor: "rgba(37, 36, 36,0.6)" }}
+    >
       <p>
         One of the most popular pastimes is watching movies among many. Every
         person has a specific preference for the type of film they would like to
@@ -51,7 +54,6 @@ export const MovieDescription = () => {
           and permitted these sites to stream their films for a small fee. The
           movie streaming sites do not compromise with quality.
         </p>
-        <br />
         <p>
           You can instantly watch a 720p or 1080p movie by streaming it from
           popular sites such as Netflix. You can also watch movies that have had

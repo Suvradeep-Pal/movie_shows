@@ -2,14 +2,15 @@
   list-style-type: none;
   text-align: right;
   margin-right: 10px;
+  color: whitesmoke;
 }
 
 .listdiv {
   width: 300px;
   margin-left: 410px;
-  border: 3px solid black;
-  border-radius: 5px;
-  margin-top: -26px;
+  border: 2px solid whitesmoke;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 li:hover {

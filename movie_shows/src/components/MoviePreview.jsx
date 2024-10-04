@@ -17,14 +17,14 @@ export const MoviePreview = (props) => {
       {selectedMovie ? (
         <ReactPlayer
           url={selectedMovie.trailers[0].url}
-          height="400px"
-          width="600px"
+          height="450px"
+          width="744px"
           controls={true}
           loop={true}
           playing={false}
         />
       ) : (
-        <p style={{ fontSize: "14px" }}>
+        <p style={{ fontSize: "14px", color: "hwb(0 89% 7%)" }}>
           <b>
             The Best Movie Streaming Services for 2024. <br />
             Are you a cinephile who wants to replicate the theatrical experience

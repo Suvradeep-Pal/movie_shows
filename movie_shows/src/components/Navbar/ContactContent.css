@@ -1,45 +1,68 @@
-/* .footerlist {
-  margin-top: 30px;
-  margin-left: 130px;
-  color: gray;
+.footerlist {
+  margin-top: 20px;
+  color: hwb(0 89% 7%);
+  margin-left: -40px;
+  .ul1 li:hover {
+    color: #ff9100;
+    cursor: pointer;
+  }
 }
 
 .secondfooterlist {
-  margin-top: 30px;
-  margin-left: 500px;
-  margin-top: -167px;
-  color: gray;
+  margin-top: 15px;
+  color: hwb(0 89% 7%);
+  margin-left: -40px;
+  .ul2 li:hover {
+    color: #ff9100;
+    cursor: pointer;
+  }
 }
 
 .thirdfooterlist {
-  margin-top: 30px;
-  margin-left: 850px;
-  margin-top: -167px;
-  color: gray;
+  margin-top: 15px;
+  color: hwb(0 89% 7%);
+  margin-left: -40px;
+  .ul3 li:hover {
+    color: #ff9100;
+    cursor: pointer;
+  }
 }
 
 .fourthfooterlist {
-  margin-top: 30px;
-  margin-left: 1150px;
-  margin-top: -113px;
-  color: gray;
-}
-.footerbutton {
-  margin-left: 130px;
-  margin-top: 115px;
-  margin-bottom: 30px;
-}
-.socialicons {
-  margin: 15px;
-  color: grey;
-}
-.footercopyright {
-  margin-bottom: 60px;
-  margin-left: 130px;
-  color: gray;
+  margin-top: 15px;
+  color: hwb(0 89% 7%);
+  margin-left: -40px;
+  .ul4 li:hover {
+    color: #ff9100;
+    cursor: pointer;
+  }
 }
 
 .faicon {
-  margin-left: 110px;
-  font-size: 50px;
-} */
+  display: flex;
+  font-size: 30px;
+  gap: 20px;
+  height: 30px;
+  color: #ff9100;
+}
+
+.icon1:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.icon2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.icon3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.icon4:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.footercopyright {
+  color: #ff9100;
+}

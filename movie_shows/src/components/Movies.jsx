@@ -6,8 +6,11 @@ import { MovieThumbnail } from "./movieThumbnail.jsx";
 import { MoviePreview } from "./MoviePreview.jsx";
 import { Dropdown } from "./Dropdown.jsx";
 import { Collection } from "./Collection.jsx";
-// import { Calender } from "./Calender.jsx";
+import { Calender } from "./Calender.jsx";
 import { MovieDescription } from "./MovieDescription.jsx";
+import { MovieCard } from "./MovieCard.jsx";
+// import { Grid, Container } from "@mui/material";
+// import { MovieCard } from "./MovieCard.jsx";
 
 const Movies = () => {
   const [selectedMovieId, setSelectedMovieId] = useState();
@@ -23,15 +26,17 @@ const Movies = () => {
       </div>
 
       <div className="right">
-        {/* <Calender /> */}
+        <Calender />
         <Dropdown />
         <Collection />
         {movieList.movies.map((e) => {
           return (
-            <MovieThumbnail
+            <MovieCard
               id={e.id}
               thumbnail={e.thumbnail}
               onClick={handleClick}
+              title={e.title}
+              showTimes={e.showTimes}
             />
           );
         })}

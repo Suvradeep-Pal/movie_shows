@@ -3,7 +3,6 @@ import "./SigninContent.css";
 import { FaUser, FaLock } from "react-icons/fa";
 // import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import LoadingSignin from "./LoadingSignin";
 
 const SigninContent = () => {
   //   const navigate = useNavigate();
@@ -30,6 +29,11 @@ const SigninContent = () => {
       <div className="wrapper">
         <form onSubmit={handleSubmit}>
           <h1>Sign In</h1>
+          <p>
+            Sign in or create an account now using your
+            <br />
+            email and password.
+          </p>
           <br />
           {errorText && <div className="errorColor">{errorText}</div>}
           <div className="input-box">
@@ -52,9 +56,18 @@ const SigninContent = () => {
             ></input>
             <FaLock className="icon" />
           </div>
+          <p>
+            By continuing, I give permission to deliver <br />
+            tickets and account notices via email. I will <br />
+            receive NO marketing messages.
+          </p>
           <button type="submit" onClick={handleLogin} className="login">
-            Sign In
+            Continue
           </button>
+          <p>
+            Or, use your phone number instead of your email <br />
+            address.
+          </p>
         </form>
       </div>
     </div>
@@ -63,7 +76,6 @@ const SigninContent = () => {
   function handleLogin() {
     if (details.name === "admin" && details.password === "123") {
       setErrorText(undefined);
-      <LoadingSignin />;
     } else {
       setErrorText("Invalid username or password!");
     }
