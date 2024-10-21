@@ -1,11 +1,11 @@
 import React from "react";
 import "./SigninContent.css";
 import { FaUser, FaLock } from "react-icons/fa";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const SigninContent = () => {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
   const [details, setDetails] = useState({
     name: "",
     password: "",
@@ -61,7 +61,7 @@ const SigninContent = () => {
             tickets and account notices via email. I will <br />
             receive NO marketing messages.
           </p>
-          <button type="submit" onClick={handleLogin} className="login">
+          <button type="submit" onClick={handleSignin} className="signin">
             Continue
           </button>
           <p>
@@ -73,9 +73,10 @@ const SigninContent = () => {
     </div>
   );
 
-  function handleLogin() {
+  function handleSignin() {
     if (details.name === "admin" && details.password === "123") {
       setErrorText(undefined);
+      navigate("/");
     } else {
       setErrorText("Invalid username or password!");
     }

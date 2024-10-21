@@ -5,11 +5,13 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./Dropdown.css";
 
-export const Dropdown = () => {
+export const Dropdown = (props) => {
   const [category, setCategory] = React.useState("");
+  const { onChange } = props;
 
   const handleChange = (event) => {
     setCategory(event.target.value);
+    onChange(event.target.value);
   };
   return (
     <div>
@@ -42,11 +44,11 @@ export const Dropdown = () => {
           <MenuItem disabled value="">
             <b>Category</b>
           </MenuItem>
-          <MenuItem value={1}>Action</MenuItem>
-          <MenuItem value={2}>Comedy</MenuItem>
-          <MenuItem value={3}>Dramas</MenuItem>
-          <MenuItem value={4}>Horror</MenuItem>
-          <MenuItem value={5}>Series</MenuItem>
+          <MenuItem value={"Action"}>Actions</MenuItem>
+          <MenuItem value={"Comedy"}>Comedy</MenuItem>
+          <MenuItem value={"Drama"}>Dramas</MenuItem>
+          <MenuItem value={"Horror"}>Horror</MenuItem>
+          <MenuItem value={"Series"}>Series</MenuItem>
         </Select>
       </FormControl>
     </div>

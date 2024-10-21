@@ -1,5 +1,7 @@
 .calender {
-  margin-top: -100px;
-  width: 300px;
-  margin-left: -120px;
+  display: flex;
+  justify-content: flex-end;
+  .MuiOutlinedInput-root {
+    background-color: whitesmoke;
+  }
 }

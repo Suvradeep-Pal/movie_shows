@@ -51,7 +51,6 @@
   background-color: #ff9100;
   margin-left: 90px;
   border: 1px solid hwb(0 89% 7%);
-
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -62,7 +61,7 @@
   margin-top: 15px;
 }
 
-.login:hover {
+.signin:hover {
   opacity: 0.3;
   transition: 0.3s;
 }

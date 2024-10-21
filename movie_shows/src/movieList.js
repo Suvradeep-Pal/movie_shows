@@ -1,3 +1,4 @@
+import { DateTime } from "luxon";
 export const movieList = {
   movies: [
     {
@@ -8,7 +9,7 @@ export const movieList = {
       director: "Christopher Nolan",
       cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
       rating: 8.8,
-      text: "Now Playing",
+      text: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
       trailers: [
         {
           title: "Official Trailer",
@@ -16,9 +17,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "9:00 AM  " },
-        { time: "1:00 PM  " },
-        { time: "5:00 PM" },
+        { time: DateTime.now().set({ hour: 9, minute: 0 }) },
+        { time: DateTime.now().set({ hour: 12, minute: 0 }) },
+        { time: DateTime.now().set({ hour: 14, minute: 0 }) },
       ],
       thumbnail:
         "https://ntvb.tmsimg.com/assets/p7825626_v_h10_aa.jpg?w=960&h=540",
@@ -31,7 +32,7 @@ export const movieList = {
       director: "Frank Darabont",
       cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
       rating: 9.3,
-      text: "Now Playing",
+      text: "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
       trailers: [
         {
           title: "Official Trailer",
@@ -39,9 +40,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "10:00 AM   " },
-        { time: "2:00 PM   " },
-        { time: "6:00 PM" },
+        { time: DateTime.now().set({ hour: 10, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 14, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 18, minute: 0 }).plus({ days: 1 }) },
       ],
       thumbnail:
         "https://thegoodwillblog.in/wp-content/uploads/2023/07/d56b2942bc24e60043c79b061040c63d43ba529f0db1feff055e3b7a4dcc28ce._ur19201080_.jpg?w=1568",
@@ -50,11 +51,11 @@ export const movieList = {
       id: 3,
       title: "The Dark Knight",
       year: 2008,
-      genre: ["Action", "Crime", "Drama"],
+      genre: ["Action", "Crime, ", "Drama"],
       director: "Christopher Nolan",
       cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
       rating: 9.0,
-      text: "Now Playing",
+      text: "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
       trailers: [
         {
           title: "Official Trailer",
@@ -62,9 +63,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "11:00 AM   " },
-        { time: "3:00 PM   " },
-        { time: "7:00 PM" },
+        { time: DateTime.now().set({ hour: 11, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 15, minute: 0 }).plus({ days: 2 }) },
+        { time: DateTime.now().set({ hour: 19, minute: 0 }).plus({ days: 3 }) },
       ],
       thumbnail:
         "https://miro.medium.com/v2/resize:fit:828/format:webp/1*nbTYqvBxS320GOdHCvx4sA.jpeg",
@@ -77,7 +78,7 @@ export const movieList = {
       director: "Quentin Tarantino",
       cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
       rating: 8.9,
-      text: "Now Playing",
+      text: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
       trailers: [
         {
           title: "Official Trailer",
@@ -85,9 +86,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "9:00 AM   " },
-        { time: "1:00 PM   " },
-        { time: "5:00 PM" },
+        { time: DateTime.now().set({ hour: 9, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 11, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 13, minute: 0 }).plus({ days: 0 }) },
       ],
       thumbnail:
         "https://waterfire.org/wp-content/uploads/2020/12/maxresdefault-5.jpg",
@@ -96,11 +97,11 @@ export const movieList = {
       id: 5,
       title: "Forrest Gump",
       year: 1994,
-      genre: ["Drama", "Romance"],
+      genre: ["Drama, ", "Romance"],
       director: "Robert Zemeckis",
       cast: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
       rating: 8.8,
-      text: "Now Playing",
+      text: "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
       trailers: [
         {
           title: "Official Trailer",
@@ -108,9 +109,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "10:00 AM   " },
-        { time: "2:00 PM   " },
-        { time: "6:00 PM" },
+        { time: DateTime.now().set({ hour: 11, minute: 0 }).plus({ days: 2 }) },
+        { time: DateTime.now().set({ hour: 13, minute: 0 }).plus({ days: 2 }) },
+        { time: DateTime.now().set({ hour: 16, minute: 0 }).plus({ days: 1 }) },
       ],
       thumbnail:
         "https://ntvb.tmsimg.com/assets/p15829_v_h8_aw.jpg?w=960&h=540",
@@ -123,7 +124,7 @@ export const movieList = {
       director: "Lana Wachowski, Lilly Wachowski",
       cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
       rating: 8.7,
-      text: "Now Playing",
+      text: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
       trailers: [
         {
           title: "Official Trailer",
@@ -131,9 +132,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "12:00 PM   " },
-        { time: "4:00 PM   " },
-        { time: "7:00 PM" },
+        { time: DateTime.now().set({ hour: 10, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 12, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 14, minute: 0 }).plus({ days: 1 }) },
       ],
       thumbnail:
         "https://www.radiollanuradecolon.icrt.cu/wp-content/uploads/2024/04/The-Matrix-1-675x360.jpg",
@@ -146,7 +147,7 @@ export const movieList = {
       director: "David Fincher",
       cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
       rating: 8.8,
-      text: "Now Playing",
+      text: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
       trailers: [
         {
           title: "Official Trailer",
@@ -154,9 +155,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "12:00 PM   " },
-        { time: "4:00 PM   " },
-        { time: "8:00 PM" },
+        { time: DateTime.now().set({ hour: 12, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 15, minute: 0 }).plus({ days: 2 }) },
+        { time: DateTime.now().set({ hour: 19, minute: 0 }).plus({ days: 3 }) },
       ],
       thumbnail:
         "https://static.toiimg.com/thumb/msid-105908016,imgsize-85016,width-400,resizemode-4/105908016.jpg",
@@ -169,7 +170,7 @@ export const movieList = {
       director: "Peter Jackson",
       cast: ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
       rating: 8.9,
-      text: "Now Playing",
+      text: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
       trailers: [
         {
           title: "Official Trailer",
@@ -177,9 +178,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "9:00 AM   " },
-        { time: "1:00 PM   " },
-        { time: "5:00 PM" },
+        { time: DateTime.now().set({ hour: 13, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 16, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 18, minute: 0 }).plus({ days: 0 }) },
       ],
       thumbnail:
         "https://facts.net/wp-content/uploads/2023/06/49-facts-about-the-movie-the-lord-of-the-rings-the-return-of-the-king-1687250236.jpg",
@@ -188,11 +189,11 @@ export const movieList = {
       id: 9,
       title: "The Godfather",
       year: 1972,
-      genre: ["Crime", "Drama"],
+      genre: ["Crime, ", "Drama"],
       director: "Francis Ford Coppola",
       cast: ["Marlon Brando", "Al Pacino", "James Caan"],
       rating: 9.2,
-      text: "Now Playing",
+      text: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
       trailers: [
         {
           title: "Official Trailer",
@@ -200,9 +201,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "9:00 AM   " },
-        { time: "1:00 PM   " },
-        { time: "5:00 PM" },
+        { time: DateTime.now().set({ hour: 11, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 15, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 19, minute: 0 }).plus({ days: 3 }) },
       ],
       thumbnail:
         "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Nxaz2PmGHZYJv0gIcBOOWg.jpeg",
@@ -215,7 +216,7 @@ export const movieList = {
       director: "David Fincher",
       cast: ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake"],
       rating: 7.7,
-      text: "Now Playing",
+      text: "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea and by the co-founder who was later squeezed out of the business.",
       trailers: [
         {
           title: "Official Trailer",
@@ -223,9 +224,9 @@ export const movieList = {
         },
       ],
       showTimes: [
-        { time: "9:00 AM   " },
-        { time: "1:00 PM   " },
-        { time: "5:00 PM" },
+        { time: DateTime.now().set({ hour: 10, minute: 0 }).plus({ days: 0 }) },
+        { time: DateTime.now().set({ hour: 13, minute: 0 }).plus({ days: 1 }) },
+        { time: DateTime.now().set({ hour: 16, minute: 0 }).plus({ days: 2 }) },
       ],
       thumbnail:
         "https://static.wixstatic.com/media/0e78f4_91532b7df4aa4103a8eecbf52be71305~mv2.jpeg/v1/fill/w_438,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0e78f4_91532b7df4aa4103a8eecbf52be71305~mv2.jpeg",

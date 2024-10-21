@@ -1,4 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 import { AppBar, Tab, Tabs, Toolbar } from "@mui/material";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -8,7 +16,6 @@ import CustomDialog from "./CustomDialog.jsx";
 import SigninContent from "./SigninContent.jsx";
 import AboutContent from "./AboutContent.jsx";
 import ContactContent from "./ContactContent.jsx";
-// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [value, setValue] = useState();
@@ -17,7 +24,32 @@ const Navbar = () => {
   const [openAbout, setOpenAbout] = useState(false);
   const [openContact, setOpenContact] = useState(false);
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location.pathname);
+    if (location.pathname.endsWith("signin")) {
+      setOpenSignin(true);
+    } else if (location.pathname.endsWith("about")) {
+      setOpenAbout(true);
+    } else if (location.pathname.endsWith("contact")) {
+      setOpenContact(true);
+    }
+  }, [location.pathname]);
+
+  const handleOpenSignin = () => {
+    navigate("/signin");
+  };
+
+  const handleOpenAbout = () => {
+    navigate("/about");
+  };
+
+  const handleOpenContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <div>
       <AppBar sx={{ background: "#FF9100" }}>
@@ -37,17 +69,17 @@ const Navbar = () => {
             <Tab
               sx={{ fontSize: "23px", marginLeft: "60px" }}
               label="Sign In"
-              onClick={() => setOpenSignin(true)}
+              onClick={handleOpenSignin}
             />
             <Tab
               sx={{ fontSize: "23px", marginLeft: "60px" }}
               label="About"
-              onClick={() => setOpenAbout(true)}
+              onClick={handleOpenAbout}
             />
             <Tab
               sx={{ fontSize: "23px", marginLeft: "60px" }}
               label="Contact Us"
-              onClick={() => setOpenContact(true)}
+              onClick={handleOpenContact}
             />
           </Tabs>
           <AccountCircleIcon
@@ -59,28 +91,39 @@ const Navbar = () => {
       </AppBar>
       <CustomDialog
         openPopup={openSignin}
-        onDialogClose={() => setOpenSignin(false)}
+        onDialogClose={handleSigninDialogClose}
       >
         <SigninContent />
       </CustomDialog>
       <CustomDialog
         openPopup={openAbout}
-        onDialogClose={() => setOpenAbout(false)}
+        onDialogClose={handleAboutDialogClose}
       >
         <AboutContent />
       </CustomDialog>
       <CustomDialog
         openPopup={openContact}
-        onDialogClose={() => setOpenContact(false)}
+        onDialogClose={handleContactDialogClose}
       >
         <ContactContent />
       </CustomDialog>
     </div>
   );
 
-  // function handleSignIn(){
-  //   navigate('/SignIn');
-  // }
+  function handleSigninDialogClose() {
+    setOpenSignin(false);
+    navigate("/");
+  }
+
+  function handleAboutDialogClose() {
+    setOpenAbout(false);
+    navigate("/");
+  }
+
+  function handleContactDialogClose() {
+    setOpenContact(false);
+    navigate("/");
+  }
 };
 
 export default Navbar;
